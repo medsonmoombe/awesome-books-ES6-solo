@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/medsonmoombe/awesome-books-ES6-solo/issues"
   },
-  "homepage": "https://github.com/medsonmoombe/awesome-books-ES6-solo#readme"
+  "homepage": "https://github.com/medsonmoombe/awesome-books-ES6-solo#readme",
+  "devDependencies": {
+    "hint": "^6.1.12",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
 }

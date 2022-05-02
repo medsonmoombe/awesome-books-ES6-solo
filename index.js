@@ -1,21 +1,17 @@
-
-import showListBooks from "./modules/showbooks.js";
-import addBook from "./modules/addbooks.js";
-import deleteBooks from "./modules/delete-books.js";
+import showListBooks from './modules/showbooks.js';
+import addBook from './modules/addbooks.js';
+import deleteBooks from './modules/delete-books.js';
 import { DateTime } from './modules/luxon.js';
- 
 
 const displayTime = document.getElementById('date');
 const datetime = DateTime.utc().toLocaleString(DateTime.DATETIME_FULL);
-displayTime.textContent =datetime;
- const bookList = document.querySelector('.book-list');
- const addBtn = document.querySelector('.add-btn');
-
+displayTime.textContent = datetime;
+const bookList = document.querySelector('.book-list');
+const addBtn = document.querySelector('.add-btn');
 
 bookList.addEventListener('click', deleteBooks);
 addBtn.addEventListener('click', addBook);
 document.addEventListener('DOMContentLoaded', showListBooks);
-
 
 // getting html element
 
