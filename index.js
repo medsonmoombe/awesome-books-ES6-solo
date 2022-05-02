@@ -1,9 +1,16 @@
-import Library from "./modules/books";
+
+import showListBooks from "./modules/showbooks.js";
+import addBook from "./modules/addbooks.js";
+import deleteBooks from "./modules/delete-books.js";
 
 
+ const bookList = document.querySelector('.book-list');
+ const addBtn = document.querySelector('.add-btn');
 
 
-
+bookList.addEventListener('click', deleteBooks);
+addBtn.addEventListener('click', addBook);
+document.addEventListener('DOMContentLoaded', showListBooks);
 
 
 // getting html element
